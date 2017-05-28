@@ -1,6 +1,6 @@
-# Project Title
+# Spotify Wrapper
 
-One Paragraph of project description goes here
+A wrapper to work with [Spotify Web API](https://developer.spotify.com/web-api). This project is part of a JS with TDD course, by [Willian Justen](https://github.com/willianjusten).
 
 ## Getting Started
 
