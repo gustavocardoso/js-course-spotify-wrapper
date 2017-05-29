@@ -14,8 +14,13 @@
     "functions": 80,
     "lines": 80,
     "check-coverage": true,
-    "reporter": ["text", "html"],
-    "exclude": ["tests/**"]
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "exclude": [
+      "tests/**"
+    ]
   },
   "repository": {
     "type": "git",
@@ -44,6 +49,10 @@
     "eslint-plugin-react": "^6.7.1",
     "husky": "^0.13.1",
     "mocha": "^3.4.2",
-    "nyc": "^10.3.2"
+    "node-fetch": "^1.7.0",
+    "nyc": "^10.3.2",
+    "sinon": "^2.3.2",
+    "sinon-chai": "^2.10.0",
+    "sinon-stub-promise": "^4.0.0"
   }
 }
