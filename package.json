@@ -4,6 +4,9 @@
   "description": "A wrapper to work with Spotify Web API",
   "main": "src/index.js",
   "scripts": {
+    "clear": "rimraf lib",
+    "build": "npm run clear && ./node_modules/.bin/babel --out-dir lib src",
+    "build:watch": "npm run build -- --watch",
     "lint": "./node_modules/.bin/eslint src/*.js || exit 1",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
     "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
@@ -39,6 +42,7 @@
   },
   "homepage": "https://github.com/gustavocardoso/js-course-spotify-wrapper#readme",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.5.1",
     "babel-register": "^6.24.1",
     "chai": "^4.0.0",
@@ -51,6 +55,7 @@
     "mocha": "^3.4.2",
     "node-fetch": "^1.7.0",
     "nyc": "^10.3.2",
+    "rimraf": "^2.6.1",
     "sinon": "^2.3.2",
     "sinon-chai": "^2.10.0",
     "sinon-stub-promise": "^4.0.0"
